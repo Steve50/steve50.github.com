@@ -90,3 +90,6 @@ li{
     position: absolute;
     font-size: 33px;
 }
+.contact{
+  display: none;
+}
