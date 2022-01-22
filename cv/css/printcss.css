@@ -89,11 +89,20 @@
       font-size: 33px;
   }
   .socmed{
-    margin-top: -330px;
+    margin-top: -290px;
     margin-left: 250px;
     color: black;
   }
   .socialmedia{
     display: none;
+  }
+  .projects{
+    margin-top: -210px;
+    margin-left: 280px;
+    color: black;
+  }
+  .prn{
+    width: 245px;
+    word-break: break-all;
   }
 }
