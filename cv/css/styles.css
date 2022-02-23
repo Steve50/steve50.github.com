@@ -96,3 +96,8 @@ li{
 .sqls{
   display: none;
 }
+.btn-print{
+  background-color: #3949ab;
+  color: white;
+  border: solid 3px black;
+}
