@@ -30,6 +30,7 @@
     text-transform: uppercase;
     margin-top:10px;
     margin-bottom:6px;
+    font-weight: bold;
   }
   dd{
     margin:0;
@@ -106,6 +107,12 @@
     word-break: break-all;
   }
   .btn-print{
+    display: none;
+  }
+  .completo{
+    display: none;
+  }
+  .vend{
     display: none;
   }
 }
