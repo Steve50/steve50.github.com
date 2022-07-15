@@ -101,6 +101,9 @@ li{
   color: white;
   border: none;
 }
+.btn-print:hover{
+  cursor: pointer;
+}
 .completo{
   display: none;
 }
