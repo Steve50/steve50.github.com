@@ -39,6 +39,9 @@
   dd{
     margin:0;
   }
+  a{
+    display: none;
+  }
   img{
     width: 190px;
     border-radius:30%;
