@@ -105,13 +105,19 @@
     display: none;
   }
   .projects{
-    margin-top: -250px;
+    margin-top: -235px;
     margin-left: 280px;
     color: black;
   }
-  .infadc{
-    margin-top: 120px;
+  .pract{
+    margin-top: 150px;
   }
+  .contect{
+    margin-top: 45px;
+  }
+  /* .contoct{
+    margin-top: 50px;
+  } */
   .prn{
     width: 245px;
     word-break: break-all;
