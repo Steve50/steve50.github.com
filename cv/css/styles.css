@@ -1,6 +1,7 @@
 :root {
   --primary: #1e293b;
   --secondary: #2563eb;
+  --secondary-hover: #1d4ed8;
   --text: #334155;
   --bg-light: #f8fafc;
   --border: #e2e8f0;
@@ -13,17 +14,21 @@
 }
 
 body {
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   color: var(--text);
   background-color: #f1f5f9;
   line-height: 1.5;
   top: 0px !important;
 }
 
-.goog-te-banner-frame {
+/* Ocultar elementos flotantes no deseados de Google Translate */
+.goog-te-banner-frame,
+.goog-te-balloon-frame,
+.skiptranslate > span {
   display: none !important;
 }
 
+/* Contenedor Principal (Tarjeta CV) */
 .cv-card {
   max-width: 850px;
   margin: 20px auto;
@@ -33,7 +38,7 @@ body {
   overflow: hidden;
 }
 
-/* Header & Foto */
+/* Encabezado */
 header {
   background-color: var(--primary);
   color: #ffffff;
@@ -77,28 +82,37 @@ header {
   margin-top: 4px;
 }
 
+/* Acciones y Botones */
 .actions {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.btn-print {
+.btn-print,
+.btn-lang {
   background-color: var(--secondary);
-  color: white;
+  color: #ffffff;
   border: none;
-  padding: 10px 16px;
+  padding: 9px 16px;
   border-radius: 6px;
   font-weight: 600;
+  font-size: 13.5px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background-color 0.2s ease;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
 
-.btn-print:hover {
-  background-color: #1d4ed8;
+.btn-print:hover,
+.btn-lang:hover {
+  background-color: var(--secondary-hover);
 }
 
-/* Extracto */
+/* Extracto / Summary */
 .summary {
   background-color: var(--bg-light);
   padding: 18px 30px;
@@ -106,7 +120,7 @@ header {
   font-size: 14px;
 }
 
-/* Layout Principal */
+/* Layout Principal (Desktop por defecto: 2 Columnas) */
 .main-layout {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -167,32 +181,75 @@ a {
   color: var(--secondary);
   text-decoration: none;
 }
-.btn-lang {
-  background-color: var(--secondary);
-  color: #ffffff;
-  border: none;
-  padding: 9px 16px;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 13.5px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  height: 38px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+
+/* =========================================================
+   MEDIA QUERIES (DISEÑO RESPONSIVO)
+   ========================================================= */
+
+/* Tablets y pantallas medianas (menos de 768px) */
+@media screen and (max-width: 768px) {
+  .cv-card {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  /* Cambiar layout de 2 columnas a 1 sola columna vertical */
+  .main-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 20px;
+  }
+
+  /* Reordenar columnas para que Contacto y Educación no queden hasta abajo en móvil */
+  aside {
+    grid-row: 1; /* Pasa el Aside arriba o déjalo en el orden natural según prefieras */
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  .summary {
+    padding: 16px 20px;
+  }
 }
 
-.btn-lang:hover {
-  background-color: var(--secondary-hover);
-}
+/* Celulares pequeños (menos de 480px) */
+@media screen and (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-/* Ocultar cualquier marco residual que intente inyectar Google */
-.goog-te-banner-frame,
-.skiptranslate {
-  display: none !important;
-}
+  .header-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
 
-body {
-  top: 0px !important;
+  .profile-photo-container {
+    width: 75px;
+    height: 75px;
+  }
+
+  .header-text h1 {
+    font-size: 19px;
+  }
+
+  .actions {
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .btn-print,
+  .btn-lang,
+  .lang-switch-container {
+    width: 100%;
+  }
+
+  .btn-print {
+    width: 100%;
+  }
 }
