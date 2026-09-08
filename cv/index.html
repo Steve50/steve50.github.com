@@ -1,260 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <title>CV de Esteban</title>
     <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Esteban es un Ingeniero en Software con 1 año de experiencia en trabajos generales por ejemplo
-    mantenimiento de equipos, desarrollo de aplicaciones de escritorio y servicio al cliente"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Esteban Gallegos Morales</title>
     <link rel="stylesheet" media="screen" href="css/styles.css" />
     <link rel="stylesheet" media="print" href="css/printcss.css" />
   </head>
-  <body oncontextmenu="return false">
-    <header>
-      <h1>CV de Esteban Gallegos Morales</h1>
-      <p>Ingeniero en Software</p>
-      <button class="btn-print" onclick="window.print()">Imprimir CV</button>
-      <a href="english.html" style="padding-left: 10px">
-        <img src="images/logo.png" alt="English" class="english" />
-      </a>
-    </header>
-    <div class="desc">
-      Soy un desarrollador con un año de experiencia programando en UWP, una
-      persona adaptable con ganas de nuevos desafíos con los cuales pueda crecer
-      tanto personalmente, espiritualmente y profesionalmente para llegar a ser
-      uno de los mejores desarrolladores.
-    </div>
-    <section>
-      <div class="container">
-        <div class="education">
-          <div>
-            <h3>Educacion</h3>
-            <div>
-              <dl>
-                <dt>Maestria en Direccion e Ingenieria de Software.</dt>
-                <dd>
-                  Febrero/2023 - Octubre/2024, UTEL (Universidad Tecnológica
-                  Latinoamericana en Línea).
-                </dd>
-                <dt>Ingeniería en Software.</dt>
-                <dd>
-                  Septiembre/2016 - Diciembre/2020, Universidad Politécnica de
-                  Santa Rosa Jáuregui.
-                </dd>
-                <dt>Linguaskill.</dt>
-                <dd>Presentado Abril/2021, puntuación 142/180+.</dd>
-                <dt>Scrum (Scrum Fundamentals Certified).</dt>
-                <dd>Presentado Diciembre/2019, puntuación 100/100.</dd>
-                <dt>Electricidad basica y practica para la vivienda.</dt>
-                <dd>Febrero/2024 - Abril/2024</dd>
-              </dl>
-            </div>
+  <body>
+    <div class="cv-card">
+      <header>
+        <div class="header-main">
+          <!-- Foto de Perfil definida directamente en HTML -->
+          <div class="profile-photo-container">
+            <img
+              id="profile-img"
+              src="images/perfil.jpg"
+              alt="Foto de Esteban Gallegos"
+              onerror="this.src='https://via.placeholder.com/150?text=Foto';"
+            />
+          </div>
+
+          <div class="header-text">
+            <h1>Esteban Gallegos Morales</h1>
+            <p>Ingeniero en Software | Maestría en Dirección de Software</p>
           </div>
         </div>
-        <div class="foto">
-          <img src="images/perfil.jpg" />
-        </div>
-        <div class="spaces">
-          <h3>Experiencia Profesional.</h3>
-          <div>
-            <dl class="resumen">
-              <dt>Vendedor en Farmacia. Farmacia El Sanatorio.</dt>
-              <dd>
-                Febrero/2023 - Actual, Cuidar y limpiar la farmacia, vender y
-                recibir los productos que se tienen en la farmacia así mismo
-                surtir y acomodar los anaqueles de acuerdo al nombre del
-                medicamento, fecha, suspencion, capsulas, tabletas inyecciones y
-                miligramos o mililitros.
-              </dd>
-              <dt>Operador de producción inspección final NEDEC MX.</dt>
-              <dd>
-                Mayo/2022 - Julio/2022, Inspeccionar piezas para ver que no
-                tenga fugas, abolladuras, falta de material, fracturas y
-                rayaduras.
-              </dd>
-              <dt>Vendedor de seguros novato MetLife.</dt>
-              <dd>
-                Febrero/2022 - Abril/2022, Vender seguros de vida, actualizar
-                polizas y hacer servicios de retiro.
-              </dd>
-              <dt>Desarrollador de apps de ADIMSA.</dt>
-              <dd>
-                Febrero/2020 - Abril/2021, Parte de un equipo desarrollando una
-                aplicación con UWP, Modificación de plantillas para reporteador
-                (Telerik), Control de servidor para API, Servicio al cliente,
-                Mantenimiento preventivo a servidor local.
-              </dd>
-              <dt class="pract">Practicante de sistemas de Serigraph MX.</dt>
-              <dd>
-                Diciembre/2018 - Marzo/2019, Mantenimiento Preventivo y
-                Correctivo de equipos de computo, Soporte al cliente, Control de
-                usuarios dentro de la red y aplicación de la empresa y
-                Mantenimiento del servidor local.
-              </dd>
-            </dl>
-            <dl class="completo">
-              <dt>Vendedor de seguros novato</dt>
-              <dd>
-                Febrero/2022 - Abril/2022, Vender seguros de vida, actualizar
-                polizas y hacer servicios de retiro.
-              </dd>
-              <dt>Desarrollador de apps de ADIMSA</dt>
-              <dd>
-                Febrero/2020 - Abril/2021 <br />
-                <ul style="margin-left: 20px">
-                  <li type="disc">
-                    <b>Parte de un equipo de desarrollo:</b> Actualizacion de
-                    sistema para poder usarlo en produccion, usando la
-                    metodologia SCRUM se modifico la estructura para poder hacer
-                    uso de DevOps y poder usar la nube para guardar todos los
-                    cambios en un lugar seguro.
-                  </li>
-                  <li type="disc">
-                    <b
-                      >Modificación de plantillas para reporteador (Telerik):</b
-                    >
-                    En la empresa usaban un reporteador para hacer los reportes
-                    bajo una plantilla esto agilizaba el proceso para hacer un
-                    reporte, yo ayude para agilizar aun mas este proceso en el
-                    cual se crearon nuevas plantillas usando de base las
-                    anteriores y asi poder usar los datos nuevos y sin perder el
-                    modelo que se estaba usando.
-                  </li>
-                  <li type="disc">
-                    <b>Control de servidor para API (Azure):</b> En la empresa
-                    se tenía contratado un espacio en la nube de Microsoft Azure
-                    para poder subir ahí las APIs que se usaban en la
-                    aplicación, en el cual se podian agregar, editar y/o
-                    eliminar las APIs que no estuvieran bien documentadas, que
-                    hicieran mal uso de los datos y/o agregaran algun proceso
-                    nuevo.
-                  </li>
-                  <li type="disc" style="margin-bottom: 50px">
-                    <b>Atención al cliente:</b> En la empresa se contaba con
-                    atención al cliente el cual era para solucionar dudas
-                    conforme como iban usando el sistema o de problemas que
-                    pudieran parar la producción.
-                  </li>
-                  <li type="disc">
-                    <b>Mantenimiento preventivo a servidor local:</b> En la
-                    empresa se contaba con un servidor local el servia para
-                    hacer uso de los reportes localmente y asi reducir el uso de
-                    espacio en la aplicacion al instalarla en los dispositivos.
-                  </li>
-                </ul>
-              </dd>
-              <dt>Practicante de sistemas de Serigraph</dt>
-              <dd>
-                Diciembre/2018 - Marzo/2019 <br />
-                <ul style="margin-left: 20px">
-                  <li type="disc">
-                    <b
-                      >Mantenimiento Preventivo y Correctivo de equipos de
-                      computo:</b
-                    >
-                    Se realizaba el mantenimiento de los equipos dos veces por
-                    mes para que no se acomulara mucho polvo que pudiera dañar
-                    los dispositivos, más aparte se eliminaba software que no
-                    estuvieran autorizados por la empresa o por el equipo de
-                    sistemas.
-                  </li>
-                  <li type="disc">
-                    <b>Soporte al personal de la empresa:</b> Se ayudaba al
-                    personal con los problemas que llegaban a tener con el uso
-                    continuo de sus equipos, llamese papel atascado en
-                    impresoras, equipos sin señal WIFI o de bateria, etc.
-                  </li>
-                  <li type="disc">
-                    <b
-                      >Control de usuarios dentro de la red y aplicación de la
-                      empresa:</b
-                    >
-                    En la empresa se trabajaba con un sistema donde estaban
-                    dados de alta todos los trabajadores y cada día se tenía que
-                    entrar para observar que todos estuvieran haciendo su
-                    trabajo y un correcto uso de su usuario de red.
-                  </li>
-                  <li type="disc">
-                    <b>Mantenimiento del servidor local:</b> Se tenía un
-                    servidor local en el cual ellos almacenaban sus proyectos,
-                    aplicaciones y archivos importantes por eso cada fin de
-                    semana se debía hacer depuración de archivos y limpieza de
-                    hardware.
-                  </li>
-                </ul>
-              </dd>
-            </dl>
+
+        <div class="actions">
+          <!-- Selector/Botón personalizado -->
+          <div class="lang-switch-container">
+            <button type="button" class="btn-lang" onclick="toggleLanguage()">
+              🌐 <span id="lang-text">English</span>
+            </button>
           </div>
+
+          <!-- Botón de impresión -->
+          <button type="button" class="btn-print" onclick="window.print()">
+            Imprimir / Guardar PDF
+          </button>
+
+          <!-- Traductor de Google (Oculto en segundo plano) -->
+          <div id="google_translate_element" style="display: none"></div>
         </div>
-        <div class="spaces">
-          <h3>Aptitudes:</h3>
-          <ul>
-            <li>Servicios cloud.</li>
-            <li>Adaptable.</li>
-            <li>Bueno en trabajos en equipo.</li>
-            <li>Instalación de software.</li>
-          </ul>
-        </div>
-        <div class="spaces infadc">
-          <h3>Información Adicional:</h3>
-          <ul>
-            <li class="prn">
-              Programación web (HTML[Media], Angular[Básico], JS[Media],
-              <br class="sqls" />
-              JSON[Media]).
-            </li>
-            <li class="prn">
-              Base de datos (XAMPP[Medio], <br class="sqls" />SQL
-              Server[Medio]).
-            </li>
-            <li>DevOps (Medio).</li>
-            <li>UWP (Medio).</li>
-            <li>JAVA (Básico).</li>
-          </ul>
-        </div>
-        <div class="spaces projects">
-          <h3>Proyectos Escolares:</h3>
-          <ul>
-            <li>Comedor Automatico para Mascotas.</li>
-            <li>Administrador de Carreras.</li>
-            <li>Sumobot Arduino.</li>
-          </ul>
-        </div>
-        <div class="spaces socmed">
-          <h3 class="socialmedia">Redes Sociales:</h3>
-          <ul class="socialmedia">
-            <li>
-              <a href="https://gitlab.com/Steve501" target="_blank">Gitlab</a>
-            </li>
-            <li>
-              <a href="https://github.com/Steve50" target="_blank">Github</a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/esteban-gallegos-morales-6a9b42220/"
-                target="_blank"
-                >LinkedIn</a
-              >
-            </li>
-            <li>
-              <a href="http://wa.me/+524681032980" target="_blank">Whatsapp</a>
-            </li>
-          </ul>
-          <h3 class="contact contect">Contacto:</h3>
-          <ul class="contact contoct">
-            <li>(468)-103-2980</li>
-            <li>estebangalmor2020@gmail.com</li>
-          </ul>
-        </div>
+      </header>
+
+      <div class="summary">
+        Ingeniero en Software con Maestría e inglés intermedio verificado
+        (Linguaskill). Experiencia en desarrollo de aplicaciones de escritorio
+        (UWP), SQL Server, MySQL, consumo de APIs REST, generación de reportes
+        (Telerik) y soporte a servidores. Certificado en Scrum Fundamentals.
+        Enfocado en integrarme a proyectos de desarrollo de software o soporte
+        técnico L2.
       </div>
-    </section>
-    <div class="ejercicios">
-      <div class="content"></div>
-      <h3 class="textH3">
-        Contacta al tel (468)-103-2980 o al correo estebangalmor2020@gmail.com
-      </h3>
+
+      <div class="main-layout">
+        <!-- Columna Izquierda: Experiencia e Historial -->
+        <main>
+          <section>
+            <h3>Experiencia Relevante en TI</h3>
+
+            <div class="item">
+              <div class="item-title">Desarrollador de Aplicaciones</div>
+              <div class="item-sub">ADIMSA | Feb 2020 – Abr 2021</div>
+              <ul>
+                <li>
+                  Desarrollo y mantenimiento de aplicaciones de escritorio en
+                  UWP.
+                </li>
+                <li>
+                  Modificación de plantillas para sistema de reportes en
+                  Telerik.
+                </li>
+                <li>
+                  Control y mantenimiento de servidor local para integración de
+                  APIs REST.
+                </li>
+                <li>
+                  Soporte técnico directo a clientes para incidencias de
+                  software.
+                </li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="item-title">Practicante de Sistemas</div>
+              <div class="item-sub">Serigraph MX | Dic 2018 – Mar 2019</div>
+              <ul>
+                <li>
+                  Mantenimiento preventivo y correctivo de equipo de cómputo y
+                  servidores.
+                </li>
+                <li>
+                  Administración de usuarios y permisos en la red corporativa.
+                </li>
+                <li>Soporte técnico a usuarios finales (Helpdesk L1/L2).</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="section-spacing">
+            <h3>Otra Experiencia Laboral</h3>
+            <div class="item">
+              <div class="item-title">Atención al Cliente y Operaciones</div>
+              <div class="item-sub">
+                Farmacia El Sanatorio / MetLife / Nedec MX / Hogar & Comercio
+                (2021 - Presente)
+              </div>
+              <p class="item-desc">
+                Gestión de inventarios, atención al cliente, resolución de
+                problemas y trabajo bajo presión en entornos operativos.
+              </p>
+            </div>
+          </section>
+        </main>
+
+        <!-- Columna Derecha: Educación, Skills y Contacto -->
+        <aside>
+          <section class="item">
+            <h3>Contacto</h3>
+            <ul>
+              <li><strong>Tel:</strong> (468) 103-2980</li>
+              <li><strong>Email:</strong> estebangalmor2020@gmail.com</li>
+              <li><strong>Ubicación:</strong> Guanajuato / Querétaro</li>
+              <li class="b">
+                <a
+                  href="https://www.linkedin.com/in/esteban-gallegos-morales-6a9b42220/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li class="b">
+                <a href="https://github.com/Steve50" target="_blank">GitHub</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="item">
+            <h3>Educación</h3>
+            <div class="item-title">
+              Maestría en Dirección e Ing. de Software
+            </div>
+            <div class="item-sub">UTEL (2023 - 2024)</div>
+
+            <div class="item-title item-title-spacing">
+              Ingeniería en Software
+            </div>
+            <div class="item-sub">
+              Univ. Politécnica de Santa Rosa (2016 - 2020)
+            </div>
+          </section>
+
+          <section class="item">
+            <h3>Certificaciones</h3>
+            <ul>
+              <li><strong>Scrum Fundamentals</strong> (100/100)</li>
+              <li><strong>Inglés Linguaskill</strong> (Nivel B1/B2)</li>
+            </ul>
+          </section>
+
+          <section class="item">
+            <h3>Habilidades Técnicas</h3>
+            <ul>
+              <li>C# / UWP</li>
+              <li>SQL Server / MySQL</li>
+              <li>HTML5 / JavaScript</li>
+              <li>APIs REST / DevOps</li>
+              <li>Telerik / Redes</li>
+            </ul>
+          </section>
+        </aside>
+      </div>
     </div>
+
+    <!-- Script del Traductor de Google -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "es",
+            includedLanguages: "en,es",
+            autoDisplay: false,
+          },
+          "google_translate_element"
+        );
+      }
+
+      function toggleLanguage() {
+        const select = document.querySelector(
+          "#google_translate_element select"
+        );
+        const langText = document.getElementById("lang-text");
+
+        if (select) {
+          // Si el valor actual es español ('es' o vacío), cambia a inglés ('en')
+          if (select.value === "es" || select.value === "") {
+            select.value = "en";
+            langText.innerText = "Español";
+          } else {
+            select.value = "es";
+            langText.innerText = "English";
+          }
+          // Dispara el evento change para que Google Translate procese la página
+          select.dispatchEvent(new Event("change"));
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
   </body>
 </html>
